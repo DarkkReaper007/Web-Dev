@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* div{
+            background-color: blue;
+        } */
+         .red{
+            background-color: red;
+         }
+         .blue{
+            background-color: blue;
+         }
+         /* Id- Selector */
+         #green{
+            background-color: green;
+         }
+         /* Child Selector */
+         div > p{
+            color: blue;
+            background-color: brown;
+         }
+         /* Descendant Selector */
+         div p{
+            color: purple;
+         }
+         /* Universal Selector */
+         *{
+            margin:0;
+            padding: 0;
+         }
+         /* Pseudo Selector */
+         /* color for links that have been visited */
+         a:visited{
+            color: yellow;
+         }
+         /* color for the links */
+         a:link{
+            color: green;
+         }
+         /* when we are clicking the background color will change to what we set */
+         a:active{
+            background-color: red;
+         }
+         a:hover{
+            background-color: blueviolet;
+         }
+         p:first-child{
+            background-color: aqua;
+         }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+            <p>i am inside article</p>    
+        </article>
+        
+        
+        <p>
+            i am a para inside div
+        </p>
+    </div>
+    <div id="green">
+        i am another div
+        <p> another child of div</p>
+    </div>
+    <a href="https://www.google.com">Go To Google</a>
+    <a href="https://quora.com">Go To quora</a>
+    
+</body>
+</html>
